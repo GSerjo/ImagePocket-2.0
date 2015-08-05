@@ -14,6 +14,14 @@
 		B25AB9CC1B72B1410019DE8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B25AB9CB1B72B1410019DE8A /* Assets.xcassets */; };
 		B25AB9CF1B72B1410019DE8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B25AB9CD1B72B1410019DE8A /* LaunchScreen.storyboard */; };
 		B25AB9DA1B72B1410019DE8A /* ImagePocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25AB9D91B72B1410019DE8A /* ImagePocketTests.swift */; };
+		B25AB9F01B72B73A0019DE8A /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B25AB9E81B72B73A0019DE8A /* MMDrawerBarButtonItem.m */; };
+		B25AB9F11B72B73A0019DE8A /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B25AB9E81B72B73A0019DE8A /* MMDrawerBarButtonItem.m */; };
+		B25AB9F21B72B73A0019DE8A /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25AB9EA1B72B73A0019DE8A /* MMDrawerController.m */; };
+		B25AB9F31B72B73A0019DE8A /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25AB9EA1B72B73A0019DE8A /* MMDrawerController.m */; };
+		B25AB9F41B72B73A0019DE8A /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = B25AB9ED1B72B73A0019DE8A /* MMDrawerVisualState.m */; };
+		B25AB9F51B72B73A0019DE8A /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = B25AB9ED1B72B73A0019DE8A /* MMDrawerVisualState.m */; };
+		B25AB9F61B72B73A0019DE8A /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25AB9EF1B72B73A0019DE8A /* UIViewController+MMDrawerController.m */; };
+		B25AB9F71B72B73A0019DE8A /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25AB9EF1B72B73A0019DE8A /* UIViewController+MMDrawerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +46,17 @@
 		B25AB9D51B72B1410019DE8A /* ImagePocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagePocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25AB9D91B72B1410019DE8A /* ImagePocketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePocketTests.swift; sourceTree = "<group>"; };
 		B25AB9DB1B72B1410019DE8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B25AB9E51B72B7390019DE8A /* ImagePocket-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImagePocket-Bridging-Header.h"; sourceTree = "<group>"; };
+		B25AB9E61B72B7390019DE8A /* ImagePocketTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImagePocketTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		B25AB9E71B72B73A0019DE8A /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		B25AB9E81B72B73A0019DE8A /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		B25AB9E91B72B73A0019DE8A /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		B25AB9EA1B72B73A0019DE8A /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		B25AB9EB1B72B73A0019DE8A /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		B25AB9EC1B72B73A0019DE8A /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		B25AB9ED1B72B73A0019DE8A /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		B25AB9EE1B72B73A0019DE8A /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		B25AB9EF1B72B73A0019DE8A /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +98,7 @@
 		B25AB9C01B72B1410019DE8A /* ImagePocket */ = {
 			isa = PBXGroup;
 			children = (
+				B25AB9E41B72B7050019DE8A /* DrawerController */,
 				B25AB9C11B72B1410019DE8A /* AppDelegate.swift */,
 				B25AB9C31B72B1410019DE8A /* ViewController.swift */,
 				B25AB9C51B72B1410019DE8A /* Main.storyboard */,
@@ -97,6 +117,24 @@
 				B25AB9DB1B72B1410019DE8A /* Info.plist */,
 			);
 			path = ImagePocketTests;
+			sourceTree = "<group>";
+		};
+		B25AB9E41B72B7050019DE8A /* DrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				B25AB9E71B72B73A0019DE8A /* MMDrawerBarButtonItem.h */,
+				B25AB9E81B72B73A0019DE8A /* MMDrawerBarButtonItem.m */,
+				B25AB9E91B72B73A0019DE8A /* MMDrawerController.h */,
+				B25AB9EA1B72B73A0019DE8A /* MMDrawerController.m */,
+				B25AB9EB1B72B73A0019DE8A /* MMDrawerController+Subclass.h */,
+				B25AB9EC1B72B73A0019DE8A /* MMDrawerVisualState.h */,
+				B25AB9ED1B72B73A0019DE8A /* MMDrawerVisualState.m */,
+				B25AB9EE1B72B73A0019DE8A /* UIViewController+MMDrawerController.h */,
+				B25AB9EF1B72B73A0019DE8A /* UIViewController+MMDrawerController.m */,
+				B25AB9E51B72B7390019DE8A /* ImagePocket-Bridging-Header.h */,
+				B25AB9E61B72B7390019DE8A /* ImagePocketTests-Bridging-Header.h */,
+			);
+			name = DrawerController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +181,7 @@
 		B25AB9B61B72B1410019DE8A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Serjo;
 				TargetAttributes = {
@@ -199,7 +238,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B25AB9F41B72B73A0019DE8A /* MMDrawerVisualState.m in Sources */,
 				B25AB9C41B72B1410019DE8A /* ViewController.swift in Sources */,
+				B25AB9F61B72B73A0019DE8A /* UIViewController+MMDrawerController.m in Sources */,
+				B25AB9F21B72B73A0019DE8A /* MMDrawerController.m in Sources */,
+				B25AB9F01B72B73A0019DE8A /* MMDrawerBarButtonItem.m in Sources */,
 				B25AB9CA1B72B1410019DE8A /* ImagePocket.xcdatamodeld in Sources */,
 				B25AB9C21B72B1410019DE8A /* AppDelegate.swift in Sources */,
 			);
@@ -209,7 +252,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B25AB9F51B72B73A0019DE8A /* MMDrawerVisualState.m in Sources */,
 				B25AB9DA1B72B1410019DE8A /* ImagePocketTests.swift in Sources */,
+				B25AB9F31B72B73A0019DE8A /* MMDrawerController.m in Sources */,
+				B25AB9F71B72B73A0019DE8A /* UIViewController+MMDrawerController.m in Sources */,
+				B25AB9F11B72B73A0019DE8A /* MMDrawerBarButtonItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,10 +377,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ImagePocket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.nelibur.ImagePocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ImagePocket/ImagePocket-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -341,10 +391,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ImagePocket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.nelibur.ImagePocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ImagePocket/ImagePocket-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -352,10 +404,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ImagePocketTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.nelibur.ImagePocketTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ImagePocket/ImagePocketTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImagePocket.app/ImagePocket";
 			};
 			name = Debug;
@@ -364,10 +419,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ImagePocketTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.nelibur.ImagePocketTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ImagePocket/ImagePocketTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImagePocket.app/ImagePocket";
 			};
 			name = Release;
