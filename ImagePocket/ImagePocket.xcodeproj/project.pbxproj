@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B214D8561B751789009DCDE0 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B214D84E1B751789009DCDE0 /* MMDrawerBarButtonItem.m */; };
+		B214D8571B751789009DCDE0 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B214D8501B751789009DCDE0 /* MMDrawerController.m */; };
+		B214D8581B751789009DCDE0 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = B214D8531B751789009DCDE0 /* MMDrawerVisualState.m */; };
+		B214D8591B751789009DCDE0 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B214D8551B751789009DCDE0 /* UIViewController+MMDrawerController.m */; };
 		B2351BAE1B72C7D200B97A40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2351BAD1B72C7D200B97A40 /* AppDelegate.swift */; };
 		B2351BB01B72C7D200B97A40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2351BAF1B72C7D200B97A40 /* ViewController.swift */; };
 		B2351BB31B72C7D200B97A40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2351BB11B72C7D200B97A40 /* Main.storyboard */; };
@@ -14,14 +18,7 @@
 		B2351BB81B72C7D200B97A40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2351BB71B72C7D200B97A40 /* Assets.xcassets */; };
 		B2351BBB1B72C7D200B97A40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2351BB91B72C7D200B97A40 /* LaunchScreen.storyboard */; };
 		B2351BC61B72C7D200B97A40 /* ImagePocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2351BC51B72C7D200B97A40 /* ImagePocketTests.swift */; };
-		B2351BDC1B72C88400B97A40 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B2351BD41B72C88300B97A40 /* MMDrawerBarButtonItem.m */; };
-		B2351BDD1B72C88400B97A40 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B2351BD41B72C88300B97A40 /* MMDrawerBarButtonItem.m */; };
-		B2351BDE1B72C88400B97A40 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2351BD61B72C88300B97A40 /* MMDrawerController.m */; };
-		B2351BDF1B72C88400B97A40 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2351BD61B72C88300B97A40 /* MMDrawerController.m */; };
-		B2351BE01B72C88400B97A40 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = B2351BD91B72C88300B97A40 /* MMDrawerVisualState.m */; };
-		B2351BE11B72C88400B97A40 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = B2351BD91B72C88300B97A40 /* MMDrawerVisualState.m */; };
-		B2351BE21B72C88400B97A40 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2351BDB1B72C88400B97A40 /* UIViewController+MMDrawerController.m */; };
-		B2351BE31B72C88400B97A40 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2351BDB1B72C88400B97A40 /* UIViewController+MMDrawerController.m */; };
+		B24C623E1B751F9100DB51F8 /* LeftSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24C623D1B751F9100DB51F8 /* LeftSideViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +32,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B214D84D1B751789009DCDE0 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		B214D84E1B751789009DCDE0 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		B214D84F1B751789009DCDE0 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		B214D8501B751789009DCDE0 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		B214D8511B751789009DCDE0 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		B214D8521B751789009DCDE0 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		B214D8531B751789009DCDE0 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		B214D8541B751789009DCDE0 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		B214D8551B751789009DCDE0 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		B2351BAA1B72C7D200B97A40 /* ImagePocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2351BAD1B72C7D200B97A40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2351BAF1B72C7D200B97A40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,17 +52,8 @@
 		B2351BC11B72C7D200B97A40 /* ImagePocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagePocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2351BC51B72C7D200B97A40 /* ImagePocketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePocketTests.swift; sourceTree = "<group>"; };
 		B2351BC71B72C7D200B97A40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2351BD11B72C88300B97A40 /* ImagePocket-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImagePocket-Bridging-Header.h"; sourceTree = "<group>"; };
-		B2351BD21B72C88300B97A40 /* ImagePocketTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImagePocketTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		B2351BD31B72C88300B97A40 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
-		B2351BD41B72C88300B97A40 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
-		B2351BD51B72C88300B97A40 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
-		B2351BD61B72C88300B97A40 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
-		B2351BD71B72C88300B97A40 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
-		B2351BD81B72C88300B97A40 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
-		B2351BD91B72C88300B97A40 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
-		B2351BDA1B72C88400B97A40 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
-		B2351BDB1B72C88400B97A40 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		B24C623B1B7517F500DB51F8 /* ImagePocket-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ImagePocket-Bridging-Header.h"; sourceTree = "<group>"; };
+		B24C623D1B751F9100DB51F8 /* LeftSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +74,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B214D84C1B751762009DCDE0 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B24C623B1B7517F500DB51F8 /* ImagePocket-Bridging-Header.h */,
+				B214D84D1B751789009DCDE0 /* MMDrawerBarButtonItem.h */,
+				B214D84E1B751789009DCDE0 /* MMDrawerBarButtonItem.m */,
+				B214D84F1B751789009DCDE0 /* MMDrawerController.h */,
+				B214D8501B751789009DCDE0 /* MMDrawerController.m */,
+				B214D8511B751789009DCDE0 /* MMDrawerController+Subclass.h */,
+				B214D8521B751789009DCDE0 /* MMDrawerVisualState.h */,
+				B214D8531B751789009DCDE0 /* MMDrawerVisualState.m */,
+				B214D8541B751789009DCDE0 /* UIViewController+MMDrawerController.h */,
+				B214D8551B751789009DCDE0 /* UIViewController+MMDrawerController.m */,
+			);
+			name = SideMenu;
+			sourceTree = "<group>";
+		};
 		B2351BA11B72C7D200B97A40 = {
 			isa = PBXGroup;
 			children = (
@@ -98,9 +112,9 @@
 		B2351BAC1B72C7D200B97A40 /* ImagePocket */ = {
 			isa = PBXGroup;
 			children = (
-				B2351BD01B72C82F00B97A40 /* DrawerController */,
+				B24C623C1B751F4C00DB51F8 /* ViewControllers */,
+				B214D84C1B751762009DCDE0 /* SideMenu */,
 				B2351BAD1B72C7D200B97A40 /* AppDelegate.swift */,
-				B2351BAF1B72C7D200B97A40 /* ViewController.swift */,
 				B2351BB11B72C7D200B97A40 /* Main.storyboard */,
 				B2351BB71B72C7D200B97A40 /* Assets.xcassets */,
 				B2351BB91B72C7D200B97A40 /* LaunchScreen.storyboard */,
@@ -119,22 +133,13 @@
 			path = ImagePocketTests;
 			sourceTree = "<group>";
 		};
-		B2351BD01B72C82F00B97A40 /* DrawerController */ = {
+		B24C623C1B751F4C00DB51F8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B2351BD31B72C88300B97A40 /* MMDrawerBarButtonItem.h */,
-				B2351BD41B72C88300B97A40 /* MMDrawerBarButtonItem.m */,
-				B2351BD51B72C88300B97A40 /* MMDrawerController.h */,
-				B2351BD61B72C88300B97A40 /* MMDrawerController.m */,
-				B2351BD71B72C88300B97A40 /* MMDrawerController+Subclass.h */,
-				B2351BD81B72C88300B97A40 /* MMDrawerVisualState.h */,
-				B2351BD91B72C88300B97A40 /* MMDrawerVisualState.m */,
-				B2351BDA1B72C88400B97A40 /* UIViewController+MMDrawerController.h */,
-				B2351BDB1B72C88400B97A40 /* UIViewController+MMDrawerController.m */,
-				B2351BD11B72C88300B97A40 /* ImagePocket-Bridging-Header.h */,
-				B2351BD21B72C88300B97A40 /* ImagePocketTests-Bridging-Header.h */,
+				B2351BAF1B72C7D200B97A40 /* ViewController.swift */,
+				B24C623D1B751F9100DB51F8 /* LeftSideViewController.swift */,
 			);
-			name = DrawerController;
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,12 +243,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2351BE01B72C88400B97A40 /* MMDrawerVisualState.m in Sources */,
+				B214D8581B751789009DCDE0 /* MMDrawerVisualState.m in Sources */,
 				B2351BB01B72C7D200B97A40 /* ViewController.swift in Sources */,
-				B2351BE21B72C88400B97A40 /* UIViewController+MMDrawerController.m in Sources */,
-				B2351BDE1B72C88400B97A40 /* MMDrawerController.m in Sources */,
-				B2351BDC1B72C88400B97A40 /* MMDrawerBarButtonItem.m in Sources */,
+				B214D8591B751789009DCDE0 /* UIViewController+MMDrawerController.m in Sources */,
+				B214D8571B751789009DCDE0 /* MMDrawerController.m in Sources */,
+				B214D8561B751789009DCDE0 /* MMDrawerBarButtonItem.m in Sources */,
 				B2351BB61B72C7D200B97A40 /* ImagePocket.xcdatamodeld in Sources */,
+				B24C623E1B751F9100DB51F8 /* LeftSideViewController.swift in Sources */,
 				B2351BAE1B72C7D200B97A40 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,11 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2351BE11B72C88400B97A40 /* MMDrawerVisualState.m in Sources */,
 				B2351BC61B72C7D200B97A40 /* ImagePocketTests.swift in Sources */,
-				B2351BDF1B72C88400B97A40 /* MMDrawerController.m in Sources */,
-				B2351BE31B72C88400B97A40 /* UIViewController+MMDrawerController.m in Sources */,
-				B2351BDD1B72C88400B97A40 /* MMDrawerBarButtonItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +450,7 @@
 				B2351BCC1B72C7D200B97A40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2351BCD1B72C7D200B97A40 /* Build configuration list for PBXNativeTarget "ImagePocketTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +459,7 @@
 				B2351BCF1B72C7D200B97A40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
