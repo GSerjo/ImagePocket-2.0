@@ -11,9 +11,13 @@ import Photos
 
 class ViewController: UIViewController {
 
+    var currentTag = TagEntity.all
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        initInternal()
+        
+        self.title = "ImagePocket"
+        navigationItem.leftBarButtonItem = MMDrawerBarButtonItem(target: self, action: "leftBarButtonItemPressed")
         
         if(PHPhotoLibrary.authorizationStatus() == PHAuthorizationStatus.Authorized){
             runApp()
@@ -33,10 +37,8 @@ class ViewController: UIViewController {
         appDelegate.centerContainer.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
     }
     
-    private func initInternal(){
-        
-        self.title = "ImagePocket"
-        navigationItem.leftBarButtonItem = MMDrawerBarButtonItem(target: self, action: "leftBarButtonItemPressed")
+    func filterImage(tagEntity: TagEntity){
+        currentTag = tagEntity
     }
     
     private func requestAuthorizationHandler(status: PHAuthorizationStatus){
@@ -63,7 +65,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func executeInMainQueue(action: ()-> Void){
+    private func executeInMainQueue(action: ()-> Void){
         dispatch_async(dispatch_get_main_queue(), action)
     }
     

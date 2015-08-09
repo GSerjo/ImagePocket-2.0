@@ -8,9 +8,9 @@
 
 import Foundation
 
-class LeftSideViewController: ViewController, UITableViewDataSource, UITableViewDelegate{
+class LeftSideViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
-    let tagCahe = TagCache.sharedInstance
+    let tagCache = TagCache.sharedInstance
     
     override func viewDidLoad() {
         
@@ -18,13 +18,25 @@ class LeftSideViewController: ViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tagCahe.tagCount
+        return tagCache.tagCount
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("TagTableViewCell", forIndexPath: indexPath) as! TagTableViewCell
-        cell.name.text = tagCahe[indexPath.row].name
+        cell.name.text = tagCache[indexPath.row].name
         return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let tagEntity = tagCache[indexPath.row]
+        
+        let centerViewController  = self.storyboard?.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
+        centerViewController.filterImage(tagEntity)
+        
+        let centerSideNavigation = UINavigationController(rootViewController: centerViewController)
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.centerContainer.centerViewController = centerSideNavigation
+        appDelegate.centerContainer.toggleDrawerSide(.Left, animated: true, completion: nil)
     }
 }

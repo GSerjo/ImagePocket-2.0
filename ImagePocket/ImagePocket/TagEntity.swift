@@ -8,11 +8,17 @@
 
 import Foundation
 
-class TagEntity {
-    var name: String?
+class TagEntity: CustomStringConvertible {
+    
+    static let all = TagEntity(name: "All")
+    var name: String
     
     init(name: String){
         self.name = name
+    }
+    
+    var description: String{
+        return "Name: \(name)"
     }
     
     convenience init() {
