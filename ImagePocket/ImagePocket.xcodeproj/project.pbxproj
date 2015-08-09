@@ -19,6 +19,8 @@
 		B2351BBB1B72C7D200B97A40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2351BB91B72C7D200B97A40 /* LaunchScreen.storyboard */; };
 		B2351BC61B72C7D200B97A40 /* ImagePocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2351BC51B72C7D200B97A40 /* ImagePocketTests.swift */; };
 		B24C623E1B751F9100DB51F8 /* LeftSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24C623D1B751F9100DB51F8 /* LeftSideViewController.swift */; };
+		B2E5E74F1B77789700775C9B /* TagEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E5E74E1B77789700775C9B /* TagEntity.swift */; };
+		B2E5E7521B77790300775C9B /* TagCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E5E7511B77790300775C9B /* TagCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		B2351BC71B72C7D200B97A40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B24C623B1B7517F500DB51F8 /* ImagePocket-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ImagePocket-Bridging-Header.h"; sourceTree = "<group>"; };
 		B24C623D1B751F9100DB51F8 /* LeftSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideViewController.swift; sourceTree = "<group>"; };
+		B2E5E74E1B77789700775C9B /* TagEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagEntity.swift; sourceTree = "<group>"; };
+		B2E5E7511B77790300775C9B /* TagCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 		B2351BAC1B72C7D200B97A40 /* ImagePocket */ = {
 			isa = PBXGroup;
 			children = (
+				B2E5E74C1B77784200775C9B /* Domain */,
 				B24C623C1B751F4C00DB51F8 /* ViewControllers */,
 				B214D84C1B751762009DCDE0 /* SideMenu */,
 				B2351BAD1B72C7D200B97A40 /* AppDelegate.swift */,
@@ -140,6 +145,31 @@
 				B24C623D1B751F9100DB51F8 /* LeftSideViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B2E5E74C1B77784200775C9B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B2E5E7501B7778EA00775C9B /* Caches */,
+				B2E5E74D1B77785800775C9B /* Entities */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		B2E5E74D1B77785800775C9B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B2E5E74E1B77789700775C9B /* TagEntity.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		B2E5E7501B7778EA00775C9B /* Caches */ = {
+			isa = PBXGroup;
+			children = (
+				B2E5E7511B77790300775C9B /* TagCache.swift */,
+			);
+			name = Caches;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,8 +279,10 @@
 				B214D8571B751789009DCDE0 /* MMDrawerController.m in Sources */,
 				B214D8561B751789009DCDE0 /* MMDrawerBarButtonItem.m in Sources */,
 				B2351BB61B72C7D200B97A40 /* ImagePocket.xcdatamodeld in Sources */,
+				B2E5E74F1B77789700775C9B /* TagEntity.swift in Sources */,
 				B24C623E1B751F9100DB51F8 /* LeftSideViewController.swift in Sources */,
 				B2351BAE1B72C7D200B97A40 /* AppDelegate.swift in Sources */,
+				B2E5E7521B77790300775C9B /* TagCache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

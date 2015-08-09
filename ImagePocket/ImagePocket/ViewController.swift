@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         }
         else {
             
-            let alertController = UIAlertController(title: "Warning", message: "The Photo permission was not authorized. Please enable it in aSettings to continue", preferredStyle: .Alert)
+            let alertController = UIAlertController(title: "Warning", message: "The Photo permission was not authorized. Please enable it in Settings to continue", preferredStyle: .Alert)
             let settingsAction = UIAlertAction(title: "Open Settings", style: .Default, handler: {_ in
                 
                 if let appSettings = NSURL(string: UIApplicationOpenSettingsURLString){
@@ -63,7 +63,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func executeInMainQueue(action: ()->Void){
+    func executeInMainQueue(action: ()-> Void){
         dispatch_async(dispatch_get_main_queue(), action)
     }
     
