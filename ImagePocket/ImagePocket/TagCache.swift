@@ -11,21 +11,22 @@ import Foundation
 class TagCache {
     
     static let sharedInstance = TagCache()
-    let cache: [TagEntity] = [TagEntity(name: "Tag1"), TagEntity(name: "Tag2")]
+    
+    private let _cache: [TagEntity] = [TagEntity(name: "Tag1"), TagEntity(name: "Tag2")]
     
     private init(){
         
     }
     
     var tags: [TagEntity]{
-        return cache
+        return _cache
     }
     
     var tagCount: Int{
-        return cache.count
+        return _cache.count
     }
     
     subscript(index: Int) -> TagEntity{
-        return cache[index]
+        return _cache[index]
     }
 }

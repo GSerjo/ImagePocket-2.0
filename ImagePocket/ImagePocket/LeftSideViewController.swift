@@ -10,7 +10,7 @@ import Foundation
 
 class LeftSideViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
-    let tagCache = TagCache.sharedInstance
+    private let _tagCache = TagCache.sharedInstance
     
     override func viewDidLoad() {
         
@@ -18,18 +18,18 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tagCache.tagCount
+        return _tagCache.tagCount
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("TagTableViewCell", forIndexPath: indexPath) as! TagTableViewCell
-        cell.name.text = tagCache[indexPath.row].name
+        cell.name.text = _tagCache[indexPath.row].name
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let tagEntity = tagCache[indexPath.row]
+        let tagEntity = _tagCache[indexPath.row]
         
         let centerViewController  = self.storyboard?.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
         centerViewController.filterImage(tagEntity)

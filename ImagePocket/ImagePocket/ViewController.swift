@@ -11,7 +11,7 @@ import Photos
 
 class ViewController: UIViewController {
 
-    var currentTag = TagEntity.all
+    var _currentTag = TagEntity.all
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     }
     
     func filterImage(tagEntity: TagEntity){
-        currentTag = tagEntity
+        _currentTag = tagEntity
     }
     
     private func requestAuthorizationHandler(status: PHAuthorizationStatus){
