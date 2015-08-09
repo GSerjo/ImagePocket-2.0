@@ -16,6 +16,6 @@ class TagEntity {
     }
     
     convenience init() {
-        self.init(name: nil)
+        self.init(name: String.empty)
     }
 }
