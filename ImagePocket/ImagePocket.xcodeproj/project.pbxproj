@@ -23,6 +23,10 @@
 		B2E5E7521B77790300775C9B /* TagCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E5E7511B77790300775C9B /* TagCache.swift */; };
 		B2E5E7541B77B0C300775C9B /* TagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E5E7531B77B0C300775C9B /* TagTableViewCell.swift */; };
 		B2E5E7571B77B56700775C9B /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E5E7561B77B56700775C9B /* StringExtensions.swift */; };
+		B2E5E7591B77E98700775C9B /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E5E7581B77E98700775C9B /* ImageCache.swift */; };
+		B2E5E75B1B77E9D500775C9B /* ImageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E5E75A1B77E9D500775C9B /* ImageEntity.swift */; };
+		B2E5E75E1B77F06D00775C9B /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E5E75D1B77F06D00775C9B /* ImageRepository.swift */; };
+		B2E5E7601B77F3AB00775C9B /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E5E75F1B77F3AB00775C9B /* ArrayExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		B2E5E7511B77790300775C9B /* TagCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagCache.swift; sourceTree = "<group>"; };
 		B2E5E7531B77B0C300775C9B /* TagTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagTableViewCell.swift; sourceTree = "<group>"; };
 		B2E5E7561B77B56700775C9B /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		B2E5E7581B77E98700775C9B /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		B2E5E75A1B77E9D500775C9B /* ImageEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEntity.swift; sourceTree = "<group>"; };
+		B2E5E75D1B77F06D00775C9B /* ImageRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
+		B2E5E75F1B77F3AB00775C9B /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +164,7 @@
 		B2E5E74C1B77784200775C9B /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				B2E5E75C1B77F05400775C9B /* Repositories */,
 				B2E5E7501B7778EA00775C9B /* Caches */,
 				B2E5E74D1B77785800775C9B /* Entities */,
 			);
@@ -166,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				B2E5E74E1B77789700775C9B /* TagEntity.swift */,
+				B2E5E75A1B77E9D500775C9B /* ImageEntity.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -174,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				B2E5E7511B77790300775C9B /* TagCache.swift */,
+				B2E5E7581B77E98700775C9B /* ImageCache.swift */,
 			);
 			name = Caches;
 			sourceTree = "<group>";
@@ -182,8 +193,17 @@
 			isa = PBXGroup;
 			children = (
 				B2E5E7561B77B56700775C9B /* StringExtensions.swift */,
+				B2E5E75F1B77F3AB00775C9B /* ArrayExtensions.swift */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		B2E5E75C1B77F05400775C9B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				B2E5E75D1B77F06D00775C9B /* ImageRepository.swift */,
+			);
+			name = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,10 +308,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2E5E7571B77B56700775C9B /* StringExtensions.swift in Sources */,
+				B2E5E7591B77E98700775C9B /* ImageCache.swift in Sources */,
+				B2E5E75B1B77E9D500775C9B /* ImageEntity.swift in Sources */,
 				B214D8581B751789009DCDE0 /* MMDrawerVisualState.m in Sources */,
 				B2351BB01B72C7D200B97A40 /* ViewController.swift in Sources */,
 				B214D8591B751789009DCDE0 /* UIViewController+MMDrawerController.m in Sources */,
 				B214D8571B751789009DCDE0 /* MMDrawerController.m in Sources */,
+				B2E5E75E1B77F06D00775C9B /* ImageRepository.swift in Sources */,
 				B214D8561B751789009DCDE0 /* MMDrawerBarButtonItem.m in Sources */,
 				B2351BB61B72C7D200B97A40 /* ImagePocket.xcdatamodeld in Sources */,
 				B2E5E7541B77B0C300775C9B /* TagTableViewCell.swift in Sources */,
@@ -299,6 +322,7 @@
 				B24C623E1B751F9100DB51F8 /* LeftSideViewController.swift in Sources */,
 				B2351BAE1B72C7D200B97A40 /* AppDelegate.swift in Sources */,
 				B2E5E7521B77790300775C9B /* TagCache.swift in Sources */,
+				B2E5E7601B77F3AB00775C9B /* ArrayExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,8 @@ import Foundation
 class TagEntity: CustomStringConvertible {
     
     static let all = TagEntity(name: "All")
+    static let untagged = TagEntity(name: "Untagged")
+    
     var name: String
     
     init(name: String){
