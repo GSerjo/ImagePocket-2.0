@@ -13,10 +13,11 @@ class ImageCache{
     
     static let sharedInctace = ImageCache()
     
-    private let _fetchResult: PHFetchResult
+    private var _fetchResult: PHFetchResult
     private var _assets = [String: PHAsset]()
     private let _imageRepository = ImageRepository.sharedInstance
     private var _taggedImages = [String: ImageEntity]()
+    private var _actualImages = [String:ImageEntity]()
     
     
     private init(){
@@ -24,12 +25,24 @@ class ImageCache{
         _taggedImages = _imageRepository.getAll().toDictionary{$0.localIdentifier}
         
         _fetchResult = PHAsset.fetchAssetsWithMediaType(.Image, options: nil)
+        _assets = getAssets(_fetchResult).toDictionary{$0.localIdentifier}
+        var t  = _assets.values.map(createImage)
+    }
+    
+    private func getAssets(fetchResult: PHFetchResult) -> [PHAsset]{
         var assets: [PHAsset] = []
         
-        _fetchResult.enumerateObjectsUsingBlock{(object, id, _) in
+        fetchResult.enumerateObjectsUsingBlock{(object, id, _) in
             if let asset = object as? PHAsset{
                 assets.append(asset)
             }
         }
+        return assets
+    }
+    
+    private func createImage(asset: PHAsset) -> ImageEntity{
+        let result = ImageEntity()
+        result.localIdentifier = asset.localIdentifier
+        return result
     }
 }
