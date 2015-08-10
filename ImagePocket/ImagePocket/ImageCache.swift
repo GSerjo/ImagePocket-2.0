@@ -26,7 +26,15 @@ class ImageCache{
         
         _fetchResult = PHAsset.fetchAssetsWithMediaType(.Image, options: nil)
         _assets = getAssets(_fetchResult).toDictionary{$0.localIdentifier}
-        var t  = _assets.values.map(createImage)
+        _actualImages  = _assets.values.map(createImage).toDictionary{$0.localIdentifier}
+    }
+    
+    subscript(localId: String) -> PHAsset?{
+        return _assets[localId]
+    }
+    
+    func getImages(tag: TagEntity) -> [ImageEntity]{
+        return _actualImages.values.array
     }
     
     private func getAssets(fetchResult: PHFetchResult) -> [PHAsset]{

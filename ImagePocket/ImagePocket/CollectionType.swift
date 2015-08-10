@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Array{
+public extension CollectionType{
     
     func toDictionary<Key: Hashable, Value>(fn: Value -> Key) -> [Key: Value]{
         var result = [Key: Value]()
@@ -19,5 +19,4 @@ public extension Array{
         }
         return result
     }
-    
 }
