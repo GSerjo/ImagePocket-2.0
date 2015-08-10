@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ImageEntity {
+final class ImageEntity {
     
     var tags: [TagEntity] = []
     var localIdentifier: String = String.empty

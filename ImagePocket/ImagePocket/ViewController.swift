@@ -11,7 +11,14 @@ import Photos
 
 class ViewController: UIViewController {
 
-    var _currentTag = TagEntity.all
+    private var _currentTag = TagEntity.all
+    private var _selectedImages = [String: ImageEntity]()
+    private var _filteredImages = [ImageEntity]()
+    private var _imageCache: ImageCache!
+    
+    @IBOutlet weak var _btTrash: UIBarButtonItem!
+    @IBOutlet weak var _btShare: UIBarButtonItem!
+    @IBOutlet weak var _btSelect: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,13 +27,22 @@ class ViewController: UIViewController {
         navigationItem.leftBarButtonItem = MMDrawerBarButtonItem(target: self, action: "leftBarButtonItemPressed")
         
         if(PHPhotoLibrary.authorizationStatus() == PHAuthorizationStatus.Authorized){
-            runApp()
+            startApp()
         }
         else{
             PHPhotoLibrary.requestAuthorization(requestAuthorizationHandler)
         }
     }
+    
+    @IBAction func OnTrashClicked(sender: AnyObject) {
+    }
 
+    @IBAction func OnShareClicked(sender: AnyObject) {
+    }
+    
+    @IBAction func OnSelectClicked(sender: AnyObject) {
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -45,7 +61,7 @@ class ViewController: UIViewController {
         
         if(status == PHAuthorizationStatus.Authorized){
             
-            executeInMainQueue{runApp}
+            executeInMainQueue{startApp}
         }
         else {
             
@@ -69,9 +85,16 @@ class ViewController: UIViewController {
         dispatch_async(dispatch_get_main_queue(), action)
     }
     
-    private func runApp(){
-        print("runnApp")
+    private func startApp(){
         
+        configureToolbar()
+        
+        _imageCache = ImageCache.sharedInctace
+    }
+    
+    private func configureToolbar(){
+        _btTrash.enabled = false
+        _btShare.enabled = false
     }
 
 }

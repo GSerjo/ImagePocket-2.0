@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ImageRepository {
+final class ImageRepository {
     
     static let sharedInstance = ImageRepository()
     

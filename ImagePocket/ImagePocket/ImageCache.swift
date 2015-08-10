@@ -9,7 +9,7 @@
 import Foundation
 import Photos
 
-class ImageCache{
+final class ImageCache{
     
     static let sharedInctace = ImageCache()
     

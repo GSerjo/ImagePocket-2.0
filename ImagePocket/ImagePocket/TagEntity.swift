@@ -8,7 +8,7 @@
 
 import Foundation
 
-class TagEntity: CustomStringConvertible {
+final class TagEntity: CustomStringConvertible {
     
     static let all = TagEntity(name: "All")
     static let untagged = TagEntity(name: "Untagged")

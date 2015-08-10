@@ -8,11 +8,11 @@
 
 import Foundation
 
-class TagCache {
+final class TagCache {
     
     static let sharedInstance = TagCache()
     
-    private let _cache: [TagEntity] = [TagEntity(name: "Tag1"), TagEntity(name: "Tag2")]
+    private let _cache = [TagEntity(name: "Tag1"), TagEntity(name: "Tag2")]
     
     private init(){
         
