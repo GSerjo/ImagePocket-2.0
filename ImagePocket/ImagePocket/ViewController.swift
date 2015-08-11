@@ -9,7 +9,7 @@
 import UIKit
 import Photos
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     private var _currentTag = TagEntity.all
     private var _selectedImages = [String: ImageEntity]()
@@ -81,6 +81,15 @@ class ViewController: UIViewController {
     
     func filterImage(tagEntity: TagEntity){
         _currentTag = tagEntity
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return _filteredImages.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("ImagePreviewCell", forIndexPath: indexPath) as! ImagePreviewCell
+        return cell
     }
     
     private func requestAuthorizationHandler(status: PHAuthorizationStatus) {

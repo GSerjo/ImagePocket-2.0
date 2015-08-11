@@ -35,11 +35,42 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xm4-tA-SJV">
+                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
+                                <animations/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gEu-6j-rwp">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImagePreviewCell" id="SiV-bS-lg6">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="91I-Ps-Mzw"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ShG-lb-7c9"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xm4-tA-SJV" secondAttribute="trailing" constant="-20" id="Gef-Bo-QKZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KCk-eX-HcY" secondAttribute="trailing" constant="-20" id="LCk-Cn-gVL"/>
+                            <constraint firstItem="Xm4-tA-SJV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="W6I-PY-zDk"/>
+                            <constraint firstItem="KCk-eX-HcY" firstAttribute="top" secondItem="Xm4-tA-SJV" secondAttribute="bottom" id="aqO-C8-BZW"/>
+                            <constraint firstItem="Xm4-tA-SJV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="cod-bs-7Tr"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KCk-eX-HcY" secondAttribute="bottom" id="hGJ-8u-qza"/>
                             <constraint firstItem="KCk-eX-HcY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="niu-az-yVM"/>
                         </constraints>

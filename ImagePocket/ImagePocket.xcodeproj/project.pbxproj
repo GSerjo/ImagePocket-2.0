@@ -19,6 +19,7 @@
 		B2351BBB1B72C7D200B97A40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2351BB91B72C7D200B97A40 /* LaunchScreen.storyboard */; };
 		B2351BC61B72C7D200B97A40 /* ImagePocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2351BC51B72C7D200B97A40 /* ImagePocketTests.swift */; };
 		B24C623E1B751F9100DB51F8 /* LeftSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24C623D1B751F9100DB51F8 /* LeftSideViewController.swift */; };
+		B251BADF1B7A69A600C51602 /* ImagePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B251BADE1B7A69A600C51602 /* ImagePreviewCell.swift */; };
 		B2E5E74F1B77789700775C9B /* TagEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E5E74E1B77789700775C9B /* TagEntity.swift */; };
 		B2E5E7521B77790300775C9B /* TagCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E5E7511B77790300775C9B /* TagCache.swift */; };
 		B2E5E7541B77B0C300775C9B /* TagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E5E7531B77B0C300775C9B /* TagTableViewCell.swift */; };
@@ -62,6 +63,7 @@
 		B2351BC71B72C7D200B97A40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B24C623B1B7517F500DB51F8 /* ImagePocket-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ImagePocket-Bridging-Header.h"; sourceTree = "<group>"; };
 		B24C623D1B751F9100DB51F8 /* LeftSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideViewController.swift; sourceTree = "<group>"; };
+		B251BADE1B7A69A600C51602 /* ImagePreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePreviewCell.swift; sourceTree = "<group>"; };
 		B2E5E74E1B77789700775C9B /* TagEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagEntity.swift; sourceTree = "<group>"; };
 		B2E5E7511B77790300775C9B /* TagCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagCache.swift; sourceTree = "<group>"; };
 		B2E5E7531B77B0C300775C9B /* TagTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagTableViewCell.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				B2351BAF1B72C7D200B97A40 /* ViewController.swift */,
 				B24C623D1B751F9100DB51F8 /* LeftSideViewController.swift */,
 				B2E5E7531B77B0C300775C9B /* TagTableViewCell.swift */,
+				B251BADE1B7A69A600C51602 /* ImagePreviewCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				B2351BAE1B72C7D200B97A40 /* AppDelegate.swift in Sources */,
 				B2E5E7521B77790300775C9B /* TagCache.swift in Sources */,
 				B2E5E7601B77F3AB00775C9B /* CollectionType.swift in Sources */,
+				B251BADF1B7A69A600C51602 /* ImagePreviewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
