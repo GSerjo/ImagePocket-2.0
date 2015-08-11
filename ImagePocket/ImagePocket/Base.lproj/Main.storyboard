@@ -24,13 +24,13 @@
                                 <items>
                                     <barButtonItem systemItem="action" id="jWF-kJ-hxG">
                                         <connections>
-                                            <action selector="OnShareClicked:" destination="BYZ-38-t0r" id="42i-Nj-2v4"/>
+                                            <action selector="onShareClicked:" destination="BYZ-38-t0r" id="eUB-Tr-Cw8"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ZVD-4I-8Bn"/>
                                     <barButtonItem systemItem="trash" id="SQ1-0w-OdW">
                                         <connections>
-                                            <action selector="OnTrashClicked:" destination="BYZ-38-t0r" id="qvq-TT-04p"/>
+                                            <action selector="onTrashClicked:" destination="BYZ-38-t0r" id="b1T-db-BOa"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -47,7 +47,7 @@
                     <navigationItem key="navigationItem" id="SNV-e2-fFp">
                         <barButtonItem key="rightBarButtonItem" title="Select" id="Swk-NE-Vo6">
                             <connections>
-                                <action selector="OnSelectClicked:" destination="BYZ-38-t0r" id="Yyd-za-NBC"/>
+                                <action selector="onSelectClicked:" destination="BYZ-38-t0r" id="mJN-BC-rWi"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

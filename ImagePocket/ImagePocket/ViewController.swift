@@ -16,15 +16,24 @@ class ViewController: UIViewController {
     private var _filteredImages = [ImageEntity]()
     private var _imageCache: ImageCache!
     
-    @IBOutlet weak var _btTrash: UIBarButtonItem!
-    @IBOutlet weak var _btShare: UIBarButtonItem!
-    @IBOutlet weak var _btSelect: UIBarButtonItem!
+    private let _selectImagesTitle = "Select Images"
+    private let _rootTitle = "Image Pocket"
+    private let _tagButtonName = "Tag"
+    private let _cancelButtonName = "Cancel"
+    private var _viewMode = ViewMode.Read
+    
+    @IBOutlet var _btTrash: UIBarButtonItem!
+    @IBOutlet var _btShare: UIBarButtonItem!
+    @IBOutlet var _btSelect: UIBarButtonItem!
+    private var _btTag: UIBarButtonItem!
+    private var _btCancel: UIBarButtonItem!
+    private var _btOpenMenu: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "ImagePocket"
-        navigationItem.leftBarButtonItem = MMDrawerBarButtonItem(target: self, action: "leftBarButtonItemPressed")
+        self.title = _rootTitle
+        configureToolbar()
         
         if(PHPhotoLibrary.authorizationStatus() == PHAuthorizationStatus.Authorized){
             startApp()
@@ -34,30 +43,47 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func OnTrashClicked(sender: AnyObject) {
-    }
-
-    @IBAction func OnShareClicked(sender: AnyObject) {
+    private enum ViewMode{
+        case Read
+        case Select
     }
     
-    @IBAction func OnSelectClicked(sender: AnyObject) {
+    
+    @IBAction func onShareClicked(sender: AnyObject) {
+    }
+    
+    @IBAction func onTrashClicked(sender: AnyObject) {
+    }
+    
+    @IBAction func onSelectClicked(sender: AnyObject) {
+        setSelectMode()
+    }
+    
+    func onSelectCancelClicked(){
+        setReadMode()
+        reloadData()
+    }
+
+    
+    func onTagClicked(){
+        
+    }
+    
+    func onOpenMenuClicked(){
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.centerContainer.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    func leftBarButtonItemPressed(){
-        
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        appDelegate.centerContainer.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
-    }
-    
     func filterImage(tagEntity: TagEntity){
         _currentTag = tagEntity
     }
     
-    private func requestAuthorizationHandler(status: PHAuthorizationStatus){
+    private func requestAuthorizationHandler(status: PHAuthorizationStatus) {
         
         if(status == PHAuthorizationStatus.Authorized){
             
@@ -87,14 +113,41 @@ class ViewController: UIViewController {
     
     private func startApp(){
         
-        configureToolbar()
-        
         _imageCache = ImageCache.sharedInctace
     }
     
+    private func reloadData(){
+        
+    }
+    
     private func configureToolbar(){
+        
+        _btTag = UIBarButtonItem(title: _tagButtonName, style: .Plain, target: self, action: "onTagClicked")
+        _btCancel = UIBarButtonItem(title: _cancelButtonName, style: .Plain, target: self, action: "onSelectCancelClicked")
+        _btOpenMenu = MMDrawerBarButtonItem(target: self, action: "onOpenMenuClicked")
+        navigationItem.leftBarButtonItem = _btOpenMenu
+
         _btTrash.enabled = false
         _btShare.enabled = false
+    }
+    
+    private func setReadMode(){
+        
+        self.title = _rootTitle
+        navigationItem.rightBarButtonItem = _btSelect
+        navigationItem.leftBarButtonItem = _btOpenMenu
+        _btTrash.enabled = false
+        _btShare.enabled = false
+        _selectedImages = [String: ImageEntity]()
+    }
+    
+    private func setSelectMode(){
+        
+        self.title = _selectImagesTitle
+        navigationItem.rightBarButtonItem = _btCancel
+        navigationItem.leftBarButtonItem = _btTag
+        navigationItem.leftBarButtonItem?.enabled = false
+        _viewMode = ViewMode.Select
     }
 
 }
