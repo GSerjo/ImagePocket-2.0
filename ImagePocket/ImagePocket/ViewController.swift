@@ -28,12 +28,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     private var _btTag: UIBarButtonItem!
     private var _btCancel: UIBarButtonItem!
     private var _btOpenMenu: UIBarButtonItem!
+    @IBOutlet weak var _collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = _rootTitle
         configureToolbar()
+        configureView()
         
         if(PHPhotoLibrary.authorizationStatus() == PHAuthorizationStatus.Authorized){
             startApp()
@@ -127,6 +129,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     private func reloadData(){
         
+    }
+    
+    private func configureView(){
+        _collectionView.backgroundColor = UIColor.whiteColor()
     }
     
     private func configureToolbar(){

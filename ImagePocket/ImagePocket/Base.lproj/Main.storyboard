@@ -86,6 +86,7 @@
                         <outlet property="_btSelect" destination="Swk-NE-Vo6" id="lrW-4m-wqq"/>
                         <outlet property="_btShare" destination="jWF-kJ-hxG" id="P6h-8s-bs0"/>
                         <outlet property="_btTrash" destination="SQ1-0w-OdW" id="Unb-mD-svt"/>
+                        <outlet property="_collectionView" destination="Xm4-tA-SJV" id="3Jd-4K-QOJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
