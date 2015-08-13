@@ -27,7 +27,7 @@
 		B2E5E7591B77E98700775C9B /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E5E7581B77E98700775C9B /* ImageCache.swift */; };
 		B2E5E75B1B77E9D500775C9B /* ImageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E5E75A1B77E9D500775C9B /* ImageEntity.swift */; };
 		B2E5E75E1B77F06D00775C9B /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E5E75D1B77F06D00775C9B /* ImageRepository.swift */; };
-		B2E5E7601B77F3AB00775C9B /* CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E5E75F1B77F3AB00775C9B /* CollectionType.swift */; };
+		B2E5E7601B77F3AB00775C9B /* SequenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E5E75F1B77F3AB00775C9B /* SequenceType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,7 @@
 		B2E5E7581B77E98700775C9B /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		B2E5E75A1B77E9D500775C9B /* ImageEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEntity.swift; sourceTree = "<group>"; };
 		B2E5E75D1B77F06D00775C9B /* ImageRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
-		B2E5E75F1B77F3AB00775C9B /* CollectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionType.swift; sourceTree = "<group>"; };
+		B2E5E75F1B77F3AB00775C9B /* SequenceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,7 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				B2E5E7561B77B56700775C9B /* StringExtensions.swift */,
-				B2E5E75F1B77F3AB00775C9B /* CollectionType.swift */,
+				B2E5E75F1B77F3AB00775C9B /* SequenceType.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -325,7 +325,7 @@
 				B24C623E1B751F9100DB51F8 /* LeftSideViewController.swift in Sources */,
 				B2351BAE1B72C7D200B97A40 /* AppDelegate.swift in Sources */,
 				B2E5E7521B77790300775C9B /* TagCache.swift in Sources */,
-				B2E5E7601B77F3AB00775C9B /* CollectionType.swift in Sources */,
+				B2E5E7601B77F3AB00775C9B /* SequenceType.swift in Sources */,
 				B251BADF1B7A69A600C51602 /* ImagePreviewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

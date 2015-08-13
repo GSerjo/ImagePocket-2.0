@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension CollectionType{
+public extension SequenceType{
     
     func toDictionary<Key: Hashable, Value>(fn: Value -> Key) -> [Key: Value]{
         var result = [Key: Value]()
