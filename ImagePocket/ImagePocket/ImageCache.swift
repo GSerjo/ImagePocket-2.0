@@ -34,7 +34,7 @@ final class ImageCache{
     }
     
     func getImages(tag: TagEntity) -> [ImageEntity]{
-        return _actualImages.values.array
+        return Array(_actualImages.values)
     }
     
     private func getAssets(fetchResult: PHFetchResult) -> [PHAsset]{

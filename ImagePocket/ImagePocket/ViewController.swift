@@ -97,8 +97,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     private func requestAuthorizationHandler(status: PHAuthorizationStatus) {
         
         if(status == PHAuthorizationStatus.Authorized){
-            
-            executeInMainQueue{startApp}
+            executeInMainQueue{self.startApp()}
         }
         else {
             
